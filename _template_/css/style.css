@@ -1,0 +1,173 @@
+/* Template Start */
+/* Master Properties */
+html{
+    font-size:18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100%;
+    background: #ddd;
+    margin:0;
+    padding:0;
+}
+
+/* mainHeader */
+header{
+    background:#000061;
+    color: #fff;
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+header h3{
+    color: #aaaaaa;
+}
+.logo img{
+    flex: 1;
+    width: 5em;
+    height: auto;
+    margin: 10px;
+    justify-self: center;
+}
+
+.mainheader{
+    flex: 2;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px 0px 10px 1em;
+}
+
+.social{
+    grid-template-columns: 50%;
+    align-items: center;
+    padding: 0px;
+    margin: 5em;
+}
+
+.social img{
+    width: 48px;
+    height: 48px;
+}
+.fb img, .yt img{
+    padding: 5px;
+    border-radius: 100%;
+    transition-property: width, height;
+    transition-duration: 1s;
+}
+
+/* Navbar */
+    #navbar{
+        background-color: #555;
+        justify-content: space-evenly;
+    }
+
+    #navbar  a{
+        margin: 0px;
+        padding: 1em;
+        text-decoration: none;
+        color: #fff;
+        transition-property: all;
+        transition-duration: 1s;
+    }
+
+    #navbar a:hover{
+        color: #eee;
+        height: fit-content;
+        border: 3px #333 solid;
+        border-top: 0px;
+        border-bottom: 0px;
+        background-color: #383838;
+    }
+
+
+    footer{
+        background-color: #555;
+        color: #fff;
+        padding: 1em;
+        text-align: center;
+        margin-top: 1em;
+    }
+
+/* Small Devices */
+@media(max-width: 767px){
+    /* Header */
+    header{
+        text-align: center;
+        align-content: center;
+        height: 100vh;
+    }
+
+    .logo{
+        display: grid;
+        justify-content: center;    
+    }
+
+    .logo img{
+        width: 7em;
+    }
+    .mainheader{
+        text-align: center;
+    }
+
+    .social{
+        display: flex;
+        justify-content: center;
+        margin: 10em 0px;
+        
+    }
+    .social img{
+        width: 64px;
+        height: 64px;
+       margin: 0px 10px;
+    }
+
+    /* Navbar */
+    #navbar{
+        display: grid;
+        text-align: center;
+    }
+}
+
+
+/* Larger Devices */
+@media(min-width: 768px){
+    /* Header */
+    .logo img{
+        transition-property: width, height;
+        transition-duration: 1s;
+    }
+    .logo img:hover{
+        width: 5.75em;
+        height: auto;
+    }
+
+    header{
+        display: flex;
+    }
+
+    .social{
+        display: grid;
+        margin: 10px;
+    }
+
+    .fb img:hover, .yt img:hover{
+        width: 64px;
+        height: 64px;
+    }
+
+    /* Navbar */
+    #navbar{
+        display: flex;
+    }
+
+    #navbar a:hover{
+        color: #eee;
+        height: fit-content;
+        border: 5px #333 solid;
+        border-top: 0px;
+        border-bottom: 0px;
+        background-color: #383838;
+    }
+}
+
+/* Template End */

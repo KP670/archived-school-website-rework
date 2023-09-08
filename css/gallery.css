@@ -1,0 +1,27 @@
+/* @media(max-width: 720px){
+    #gallery{
+        -ms-grid-column-align: center;
+    }
+} */
+
+/* @media(min-width: 721px){ */
+    /* Posters */
+    /* #gallery{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        justify-content: center;
+    } */
+
+    #gallery img{
+        margin: 2em;
+        transition: 1s;
+        padding: 5px;
+        animation-fill-mode: forwards;
+    }
+
+    #gallery img:hover{
+        /* filter: grayscale(100%); */
+        transform:scale(1.1);
+        border: #fffb00 10px solid;
+    }
+}
